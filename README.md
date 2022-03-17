@@ -25,13 +25,23 @@ The proposed MulCS is implemented with python 3.7.11 on a NVIDIA Tesla V100 GPU.
 
 ### Quick Start
 
-- Step1: train
+- Step1: data preparation 
+
+data link
+> https://drive.google.com/file/d/1_-BcLEerRFA8Ms7d9xUmWr8ai-EC4ZPp/view?usp=sharing
+
+checkpoint link
+> https://drive.google.com/file/d/1aacga6uakq_PNVFiwA49maovb9lYaSA9/view?usp=sharing
+
+Download the data and checkpoint folders, unzip them, and put them directly in the home directory.
+
+- Step2: train
 
   ```
   python train.py --data_path ./data/ --model IREmbeder
   ```
 
-- Step2: test
+- Step3: test
   
   ```
   python test.py --data_path ./data/ --model IREmbeder  --reload_from 100
