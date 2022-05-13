@@ -18,4 +18,5 @@ We train and evaluate our method and NBoW in two ways. One is to mix all multili
 Among them, MuLNBoW+ and MulCS+ are the results of training using the first way, and MulNBoW- and MulCS- are the results of training using the second way. Through observation, we can draw the following conclusions:
 * Both MuLNBoW+ and MulCS+ improve the single-language search performance, and MulCS+ improves by 10.0%, indicating that our method can make better use of multilingual data and improve search performance.
 * Both MuLNBoW- and MulCS- degrade monolingual search performance, indicating that using more monolingual data is better than using multilingual data of the same size. But MulCS- degrades less performance than MuLNBoW-, showing that our method can better utilize limited multilingual data.
+
 In conclusion, our method can better unify representations between multiple languages and thus make better use of multilingual data.
