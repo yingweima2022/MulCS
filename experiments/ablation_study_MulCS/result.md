@@ -6,7 +6,7 @@
 We train and evaluate our method and NBoW in two ways. One is to mix all multilingual data together for training (the method in the paper), which can effectively utilize more data. The other is to use multilingual mixed data that maintains the same scale as monolingual data. The experimental results are shown in the following table.
 
 | Model | C | Java | Python | Avg |
-| :-: | :-: | :-: | :-: | :-: |
+| :- | :- | :- | :- | :- |
 | NBoW |0.713 | 0.612 |0.605 | 0.643 |
 | MuLNBoW+ | 0.734(+2.9) | 0.616(+0.7) | 0.612(+1.2) | 0.654(+1.7) |
 | MuLNBoW-|0.622(-14.6) |0.502(-21.9) | 0.435(-39.1)| 0.520(-23.7)|
