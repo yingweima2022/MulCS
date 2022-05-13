@@ -10,6 +10,6 @@ The experimental results are shown in the following Table.
 | CodeBERT | <b>0.735</b> | 0.643 | 0.679 | 0.686 |
 | CodeBERT_IR | 0.731 |<b>0.656</b> | <b>0.718</b>| <b>0.702</b>|
 
-#### Among the results, CodeBERT_FT fine-tunes the pre-trained model on our data, CodeBERT_IR adds semantic graph sequences as additional information in fine-tuning. The results show that: 
+#### Among the results, CodeBERT fine-tunes the pre-trained model on our data, CodeBERT_IR adds semantic graph sequences as additional information in fine-tuning. The results show that: 
 * the pre-trained model greatly improves the performance of code search; 
 * adding our semantic graph representation of IR can get additional enhancement even in a simple way during the fine-tuning stage. It would indicate a promising direction of understanding source code by combining intermediate representation and pre-training techniques. We leave a deep investigation in the future work.
