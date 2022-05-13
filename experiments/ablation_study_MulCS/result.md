@@ -8,11 +8,11 @@ We train and evaluate our method and NBoW in two ways. One is to mix all multili
 | Model | C | Java | Python | Avg |
 | :- | :- | :- | :- | :- |
 | NBoW |0.713 | 0.612 |0.605 | 0.643 |
-| MuLNBoW+ | 0.734(+2.9) | 0.616(+0.7) | 0.612(+1.2) | 0.654(+1.7) |
-| MuLNBoW-|0.622(-14.6) |0.502(-21.9) | 0.435(-39.1)| 0.520(-23.7)|
+| MuLNBoW+ | 0.734(+2.9%) | 0.616(+0.7%) | 0.612(+1.2%) | 0.654(+1.7%) |
+| MuLNBoW-|0.622(-14.6%) |0.502(-21.9%) | 0.435(-39.1%)| 0.520(-23.7%)|
 | SingleMulCS |0.721 |  0.619 | 0.634 | 0.658|
-| MulCS+ |0.786(+9.0)| 0.667(+7.8)| 0.719(+13.4)| 0.724 (+10.0)|
-| MulCS- |0.651(-10.8) | 0.517(-19.7) |0.472(-34.3) | 0.547 (-20.3)|
+| MulCS+ |0.786(+9.0%)| 0.667(+7.8%)| 0.719(+13.4%)| 0.724 (+10.0%)|
+| MulCS- |0.651(-10.8%) | 0.517(-19.7%) |0.472(-34.3%) | 0.547 (-20.3%)|
 
 
 Among them, MuLNBoW+ and MulCS+ are the results of training using the first way, and MulNBoW- and MulCS- are the results of training using the second way. Through observation, we can draw the following conclusions:
