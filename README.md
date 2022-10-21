@@ -27,30 +27,35 @@ The proposed MulCS is implemented with python 3.7.11 on a NVIDIA Tesla V100 GPU.
 
 - Step1: data preparation 
 
-data link
-> https://drive.google.com/file/d/1_-BcLEerRFA8Ms7d9xUmWr8ai-EC4ZPp/view?usp=sharing
+data link (mixed dataset):
+> NL Code Search:https://drive.google.com/file/d/1pV9-qQuSCk2OeA7efBuVd4EIRIhz_NAE/view?usp=sharing
 
-checkpoint link
-> https://drive.google.com/file/d/1aacga6uakq_PNVFiwA49maovb9lYaSA9/view?usp=sharing
 
-Download the data and checkpoint folders, unzip them, and put them directly in the home directory.
+> XL Code Search:coming soon...
+
+other single data link:
+
+https://github.com/reddy-lab-code-research/XLCoST
+
+Download the data folders, unzip them, and put them directly in the 'nl2codesearch/dataset/program_level/' or 'code2codesearch/dataset/program_level/' directory.
 
 - Step2: train
 
   ```
-  python train.py --data_path ./data/ --model IREmbeder
+  bash run_code_search.sh 0 all nl2code program codebert train
   ```
 
 - Step3: test
   
   ```
-  python test.py --data_path ./data/ --model IREmbeder  --reload_from 100
+  bash run_code_search.sh 0 java code2code program codebert eval
   ```
 
 
 Parameter setting
 
-- data_path: the path of dataset
-- model: the name of the model.
-- reload_from: checkpoint for testing
-- lr: learning rate(1e-3)
+- GPU: 0
+- Language: all
+- task: nl2code
+- model: codebert
+- type: train
